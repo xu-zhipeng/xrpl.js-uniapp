@@ -2,6 +2,8 @@ import { randomBytes as cryptoRandomBytes } from 'crypto'
 import type { BytesToHexFn, HexToBytesFn, RandomBytesFn } from './types'
 import { HexToStringFn, StringToHexFn } from './types'
 
+const { TextEncoder, TextDecoder } = require('../text-encoding/index.js')
+
 const OriginalBuffer = Symbol('OriginalBuffer')
 
 /**

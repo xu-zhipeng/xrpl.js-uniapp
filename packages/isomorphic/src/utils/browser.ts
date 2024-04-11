@@ -10,6 +10,8 @@ import type {
   StringToHexFn,
 } from './types'
 
+const { TextEncoder, TextDecoder } = require('../text-encoding/index.js')
+
 /* eslint-disable func-style -- Typed to ensure uniformity between node and browser implementations and docs */
 export const bytesToHex: typeof BytesToHexFn = (bytes) => {
   const hex = nobleBytesToHex(

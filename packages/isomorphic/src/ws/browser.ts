@@ -1,6 +1,8 @@
 /* eslint-disable max-classes-per-file -- Needs to be a wrapper for ws */
 import { EventEmitter } from 'eventemitter3'
 
+const { TextEncoder } = require('../text-encoding/index.js')
+
 // Define the global WebSocket class found on the native browser
 declare class WebSocket {
   public onclose?: (closeEvent: CloseEvent) => void
