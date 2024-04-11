@@ -2,7 +2,7 @@ import fs from 'fs'
 import path from 'path'
 
 import { assert } from 'chai'
-import { encode } from 'ripple-binary-codec'
+import { encode } from '@xrplf-uniapp/ripple-binary-codec'
 
 import {
   EnableAmendment,

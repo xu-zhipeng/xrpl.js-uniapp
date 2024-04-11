@@ -1,5 +1,5 @@
 {
-  "name": "ripple-keypairs",
+  "name": "@xrplf-uniapp/ripple-keypairs",
   "version": "2.0.0",
   "description": "Cryptographic key pairs for the XRP Ledger",
   "scripts": {
@@ -20,8 +20,8 @@
   },
   "dependencies": {
     "@noble/curves": "^1.0.0",
-    "@xrplf/isomorphic": "^1.0.0",
-    "ripple-address-codec": "^5.0.0"
+    "@xrplf-uniapp/isomorphic": "^1.0.0",
+    "@xrplf-uniapp/ripple-address-codec": "^5.0.0"
   },
   "keywords": [
     "ripple",
@@ -31,7 +31,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git@github.com:XRPLF/xrpl.js.git"
+    "url": "git@github.com:xu-zhipeng/xrpl.js-uniapp.git"
   },
   "license": "ISC",
   "prettier": "@xrplf/prettier-config",

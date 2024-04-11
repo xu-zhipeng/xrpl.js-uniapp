@@ -1,4 +1,4 @@
-import { Amount } from 'ripple-binary-codec/dist/types'
+import { Amount } from '@xrplf-uniapp/ripple-binary-codec/dist/types'
 
 import { XChainBridge } from '../common'
 

@@ -1,4 +1,4 @@
-import { decode, encode } from 'ripple-binary-codec'
+import { decode, encode } from '@xrplf-uniapp/ripple-binary-codec'
 
 import type {
   Client,
@@ -29,7 +29,7 @@ async function sleep(ms: number): Promise<void> {
  *
  * @param client - The client to submit the request to.
  * @param signedTransaction - The signed transaction to submit. It can be either a Transaction object or a
- * string (encode from ripple-binary-codec) representation of the transaction.
+ * string (encode from @xrplf-uniapp/ripple-binary-codec) representation of the transaction.
  * @param [failHard=false] - Optional. Determines whether the submission should fail hard (true) or not (false). Default is false.
  * @returns A promise that resolves with the response from the client.
  * @throws {ValidationError} If the signed transaction is not valid (not signed).
@@ -194,7 +194,7 @@ function isSigned(transaction: SubmittableTransaction | string): boolean {
  *
  * @param client - The client from which to retrieve the signed transaction.
  * @param transaction - The transaction to retrieve. It can be either a Transaction object or
- * a string (encode from ripple-binary-codec) representation of the transaction.
+ * a string (encode from @xrplf-uniapp/ripple-binary-codec) representation of the transaction.
  * @param [options={}] - Optional. Additional options for retrieving the signed transaction.
  * @param [options.autofill=true] - Optional. Determines whether the transaction should be autofilled (true)
  * or not (false). Default is true.
@@ -206,7 +206,7 @@ function isSigned(transaction: SubmittableTransaction | string): boolean {
  *
  * @example
  * import { Client } from "xrpl"
- * import { encode } from "ripple-binary-codec"
+ * import { encode } from "@xrplf-uniapp/ripple-binary-codec"
  *
  * const client = new Client("wss://s.altnet.rippletest.net:51233");
  * await client.connect():
@@ -263,7 +263,7 @@ export async function getSignedTx(
  * Retrieves the last ledger sequence from a transaction.
  *
  * @param transaction - The transaction to retrieve the last ledger sequence from. It can be either a Transaction object or
- * a string (encode from ripple-binary-codec) representation of the transaction.
+ * a string (encode from @xrplf-uniapp/ripple-binary-codec) representation of the transaction.
  * @returns The last ledger sequence of the transaction, or null if not available.
  *
  * @example

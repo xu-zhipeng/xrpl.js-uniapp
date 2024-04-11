@@ -1,5 +1,5 @@
 import BigNumber from 'bignumber.js'
-import { decode } from 'ripple-binary-codec'
+import { decode } from '@xrplf-uniapp/ripple-binary-codec'
 
 import type {
   AccountTxResponse,

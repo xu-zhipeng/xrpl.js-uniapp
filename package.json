@@ -14,12 +14,12 @@
     "update:confirm": "npx npm-check-updates --configFileName .ncurc.json -u"
   },
   "dependencies": {
-    "@xrplf/isomorphic": "file:packages/isomorphic",
-    "@xrplf/secret-numbers": "file:packages/secret-numbers",
-    "ripple-address-codec": "file:packages/ripple-address-codec",
-    "ripple-binary-codec": "file:packages/ripple-binary-codec",
-    "ripple-keypairs": "file:packages/ripple-keypairs",
-    "xrpl": "file:packages/xrpl"
+    "@xrplf-uniapp/isomorphic": "file:packages/isomorphic",
+    "@xrplf-uniapp/secret-numbers": "file:packages/secret-numbers",
+    "@xrplf-uniapp/ripple-address-codec": "file:packages/ripple-address-codec",
+    "@xrplf-uniapp/ripple-binary-codec": "file:packages/ripple-binary-codec",
+    "@xrplf-uniapp/ripple-keypairs": "file:packages/ripple-keypairs",
+    "xrpl-uniapp": "file:packages/xrpl"
   },
   "devDependencies": {
     "@types/chai": "^4.2.21",

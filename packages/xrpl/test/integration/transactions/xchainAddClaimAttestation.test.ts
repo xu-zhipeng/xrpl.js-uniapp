@@ -1,7 +1,7 @@
 /* eslint-disable max-statements -- necessary because transfers require a lot of steps */
 import { assert } from 'chai'
-import { encode } from 'ripple-binary-codec'
-import { sign } from 'ripple-keypairs'
+import { encode } from '@xrplf-uniapp/ripple-binary-codec'
+import { sign } from '@xrplf-uniapp/ripple-keypairs'
 
 import {
   AccountSet,

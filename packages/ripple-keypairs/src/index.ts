@@ -3,10 +3,10 @@ import {
   decodeSeed,
   encodeAccountID,
   encodeSeed,
-} from 'ripple-address-codec'
-import { ripemd160 } from '@xrplf/isomorphic/ripemd160'
-import { sha256 } from '@xrplf/isomorphic/sha256'
-import { hexToBytes, randomBytes } from '@xrplf/isomorphic/utils'
+} from '@xrplf-uniapp/ripple-address-codec'
+import { ripemd160 } from '@xrplf-uniapp/isomorphic/ripemd160'
+import { sha256 } from '@xrplf-uniapp/isomorphic/sha256'
+import { hexToBytes, randomBytes } from '@xrplf-uniapp/isomorphic/utils'
 
 import { accountPublicFromPublicGenerator } from './signing-schemes/secp256k1/utils'
 import Sha512 from './utils/Sha512'

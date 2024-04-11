@@ -1,5 +1,5 @@
-import { isValidClassicAddress, isValidXAddress } from 'ripple-address-codec'
-import { TRANSACTION_TYPES } from 'ripple-binary-codec'
+import { isValidClassicAddress, isValidXAddress } from '@xrplf-uniapp/ripple-address-codec'
+import { TRANSACTION_TYPES } from '@xrplf-uniapp/ripple-binary-codec'
 
 import { ValidationError } from '../../errors'
 import {

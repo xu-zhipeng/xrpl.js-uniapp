@@ -1,5 +1,5 @@
 {
-  "name": "@xrplf/isomorphic/utils",
+  "name": "@xrplf-uniapp/isomorphic/utils",
   "private": true,
   "main": "../dist/utils",
   "types": "../dist/utils",

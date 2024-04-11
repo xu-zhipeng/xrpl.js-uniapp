@@ -1,6 +1,6 @@
 const fs = require('fs')
 const path = require('path')
-const fixtures = require('../../ripple-binary-codec/test/fixtures/codec-fixtures.json')
+const fixtures = require('../../@xrplf-uniapp/ripple-binary-codec/test/fixtures/codec-fixtures.json')
 
 const NORMAL_TYPES = ['number', 'string']
 const NUMBERS = ['0', '1']
@@ -11,7 +11,7 @@ function getTx(txName) {
     .filter((tx) => tx.json.TransactionType === txName)
     .map((tx) => tx.json)
   if (validTxs.length == 0) {
-    throw new Error(`Must have ripple-binary-codec fixture for ${txName}`)
+    throw new Error(`Must have @xrplf-uniapp/ripple-binary-codec fixture for ${txName}`)
   }
   const validTx = validTxs[0]
   delete validTx.TxnSignature

@@ -1,6 +1,6 @@
 import { Comparable } from './serialized-type'
 import { BinaryParser } from '../serdes/binary-parser'
-import { hexToBytes } from '@xrplf/isomorphic/utils'
+import { hexToBytes } from '@xrplf-uniapp/isomorphic/utils'
 import { compare } from '../utils'
 
 /**

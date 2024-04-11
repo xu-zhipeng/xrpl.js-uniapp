@@ -1,6 +1,6 @@
 import { UInt } from './uint'
 import { BinaryParser } from '../serdes/binary-parser'
-import { bytesToHex, concat, hexToBytes } from '@xrplf/isomorphic/utils'
+import { bytesToHex, concat, hexToBytes } from '@xrplf-uniapp/isomorphic/utils'
 import { readUInt32BE, writeUInt32BE } from '../utils'
 
 const HEX_REGEX = /^[a-fA-F0-9]{1,16}$/

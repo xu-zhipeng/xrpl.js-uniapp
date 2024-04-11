@@ -1,4 +1,4 @@
-import { stringToHex, hexToString } from '@xrplf/isomorphic/utils'
+import { stringToHex, hexToString } from '@xrplf-uniapp/isomorphic/utils'
 
 /**
  * Converts a string to its hex equivalent. Useful for Memos.
@@ -6,7 +6,7 @@ import { stringToHex, hexToString } from '@xrplf/isomorphic/utils'
  * @param string - The string to convert to Hex.
  * @returns The Hex equivalent of the string.
  *
- * @deprecated use `@xrplf/isomorphic/utils`'s `stringToHex`
+ * @deprecated use `@xrplf-uniapp/isomorphic/utils`'s `stringToHex`
  *
  * @category Utilities
  */
@@ -21,7 +21,7 @@ function convertStringToHex(string: string): string {
  * @param encoding - The encoding to use. Defaults to 'utf8' (UTF-8). 'ascii' is also allowed.
  * @returns The converted string.
  *
- * @deprecated use `@xrplf/isomorphic/utils`'s `hexToString`
+ * @deprecated use `@xrplf-uniapp/isomorphic/utils`'s `hexToString`
  *
  * @category Utilities
  */

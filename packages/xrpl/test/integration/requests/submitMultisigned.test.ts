@@ -1,5 +1,5 @@
 import { assert } from 'chai'
-import { decode } from 'ripple-binary-codec'
+import { decode } from '@xrplf-uniapp/ripple-binary-codec'
 
 import {
   AccountSet,

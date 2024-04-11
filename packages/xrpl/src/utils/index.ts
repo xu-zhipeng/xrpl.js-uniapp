@@ -13,15 +13,15 @@ import {
   isValidClassicAddress,
   isValidXAddress,
   xAddressToClassicAddress,
-} from 'ripple-address-codec'
+} from '@xrplf-uniapp/ripple-address-codec'
 import {
   encode as rbcEncode,
   decode as rbcDecode,
   encodeForMultisigning as rbcEncodeForMultisigning,
   encodeForSigning as rbcEncodeForSigning,
   encodeForSigningClaim as rbcEncodeForSigningClaim,
-} from 'ripple-binary-codec'
-import { verify as verifyKeypairSignature } from 'ripple-keypairs'
+} from '@xrplf-uniapp/ripple-binary-codec'
+import { verify as verifyKeypairSignature } from '@xrplf-uniapp/ripple-keypairs'
 
 import { LedgerEntry } from '../models/ledger'
 import { Response } from '../models/methods'

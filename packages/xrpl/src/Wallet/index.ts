@@ -1,25 +1,25 @@
 import { HDKey } from '@scure/bip32'
 import { mnemonicToSeedSync, validateMnemonic } from '@scure/bip39'
 import { wordlist } from '@scure/bip39/wordlists/english'
-import { bytesToHex } from '@xrplf/isomorphic/utils'
+import { bytesToHex } from '@xrplf-uniapp/isomorphic/utils'
 import BigNumber from 'bignumber.js'
 import {
   classicAddressToXAddress,
   isValidXAddress,
   xAddressToClassicAddress,
   encodeSeed,
-} from 'ripple-address-codec'
+} from '@xrplf-uniapp/ripple-address-codec'
 import {
   encodeForSigning,
   encodeForMultisigning,
   encode,
-} from 'ripple-binary-codec'
+} from '@xrplf-uniapp/ripple-binary-codec'
 import {
   deriveAddress,
   deriveKeypair,
   generateSeed,
   sign,
-} from 'ripple-keypairs'
+} from '@xrplf-uniapp/ripple-keypairs'
 
 import ECDSA from '../ECDSA'
 import { ValidationError } from '../errors'

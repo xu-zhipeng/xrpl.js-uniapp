@@ -1,5 +1,5 @@
 {
-  "name": "@xrplf/isomorphic/ws",
+  "name": "@xrplf-uniapp/isomorphic/ws",
   "private": true,
   "main": "../dist/ws",
   "types": "../dist/ws",

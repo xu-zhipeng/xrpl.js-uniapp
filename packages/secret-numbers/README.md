@@ -1,10 +1,10 @@
-# XRPL Secret Numbers [![npm version](https://badge.fury.io/js/@xrplf%2Fsecret-numbers.svg)](https://www.npmjs.com/@xrplf/secret-numbers)
+# XRPL Secret Numbers [![npm version](https://badge.fury.io/js/@xrplf-uniapp%2Fsecret-numbers.svg)](https://www.npmjs.com/@xrplf-uniapp/secret-numbers)
 
 For more background information, please read the [proposed Standard](https://github.com/xrp-community/standards-drafts/issues/15).
 
 A tool to convert Secret Numbers to the widely used Family Seed `s...` format is [available here](https://github.com/WietseWind/secret-numbers-to-family-seed/releases)
 
-A bundled version of this lib is available at NPM (`build/xrplf-secret-numbers-latest.js`), CDN: https://cdn.jsdelivr.net/npm/@xrplf/secret-numbers. You can access the library as `xrplf_secret_numbers`. Sample:
+A bundled version of this lib is available at NPM (`build/xrplf-secret-numbers-latest.js`), CDN: https://cdn.jsdelivr.net/npm/@xrplf-uniapp/secret-numbers. You can access the library as `xrplf_secret_numbers`. Sample:
 https://jsfiddle.net/WietseWind/uo1zy0q7/
 
 #### Generate XRPL Accounts with a number-based secret: 8 chunks of 6 digits.
@@ -34,14 +34,14 @@ The typescript code to use resides in `./src/` and the compiled js in `./dist/` 
 ##### Generating a new account:
 
 ```
-const {Account} = require('@xrplf/secret-numbers')
+const {Account} = require('@xrplf-uniapp/secret-numbers')
 const account = new Account()
 ```
 
 ##### Importing an existing account:
 
 ```
-const {Account} = require('@xrplf/secret-numbers')
+const {Account} = require('@xrplf-uniapp/secret-numbers')
 const secret = '399150 474506 009147 088773 432160 282843 253738 605430'
 const account = new Account(secret)
 ```
@@ -49,7 +49,7 @@ const account = new Account(secret)
 Or importing with custom entropy (buffer, 16):
 
 ```
-const {Account} = require('@xrplf/secret-numbers')
+const {Account} = require('@xrplf-uniapp/secret-numbers')
 const entropy = Buffer.from('0123456789ABCDEF0123456789ABCDEF', 'hex')
 const account = new Account(entropy)
 ```
@@ -76,7 +76,7 @@ console.log(account.getSecret())
 There's a `Utils` export as well:
 
 ```
-const {Account, Utils} = require('@xrplf/secret-numbers')
+const {Account, Utils} = require('@xrplf-uniapp/secret-numbers')
 ```
 
 Some Utils methods (that you may want to use in your UI / ... before using the Account constructor):

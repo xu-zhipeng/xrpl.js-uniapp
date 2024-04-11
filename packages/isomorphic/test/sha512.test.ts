@@ -1,5 +1,5 @@
-import { sha512 } from '@xrplf/isomorphic/sha512'
-import { bytesToHex } from '@xrplf/isomorphic/utils'
+import { sha512 } from '@xrplf-uniapp/isomorphic/sha512'
+import { bytesToHex } from '@xrplf-uniapp/isomorphic/utils'
 
 describe('sha512', () => {
   it('hashes', () => {

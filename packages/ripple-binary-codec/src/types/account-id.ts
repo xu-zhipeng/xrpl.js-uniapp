@@ -3,9 +3,9 @@ import {
   encodeAccountID,
   isValidXAddress,
   xAddressToClassicAddress,
-} from 'ripple-address-codec'
+} from '@xrplf-uniapp/ripple-address-codec'
 import { Hash160 } from './hash-160'
-import { hexToBytes } from '@xrplf/isomorphic/utils'
+import { hexToBytes } from '@xrplf-uniapp/isomorphic/utils'
 
 const HEX_REGEX = /^[A-F0-9]{40}$/
 

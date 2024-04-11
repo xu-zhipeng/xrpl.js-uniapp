@@ -1,5 +1,5 @@
 import { Hash } from './hash'
-import { bytesToHex } from '@xrplf/isomorphic/utils'
+import { bytesToHex } from '@xrplf-uniapp/isomorphic/utils'
 
 /**
  * Hash with a width of 128 bits

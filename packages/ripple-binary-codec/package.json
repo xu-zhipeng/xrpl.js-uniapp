@@ -1,5 +1,5 @@
 {
-  "name": "ripple-binary-codec",
+  "name": "@xrplf-uniapp/ripple-binary-codec",
   "version": "2.0.0",
   "description": "XRP Ledger binary codec",
   "files": [
@@ -11,9 +11,9 @@
     "test": "test"
   },
   "dependencies": {
-    "@xrplf/isomorphic": "^1.0.0",
+    "@xrplf-uniapp/isomorphic": "^1.0.0",
     "bignumber.js": "^9.0.0",
-    "ripple-address-codec": "^5.0.0"
+    "@xrplf-uniapp/ripple-address-codec": "^5.0.0"
   },
   "scripts": {
     "build": "tsc --build tsconfig.build.json && copyfiles ./src/enums/definitions.json ./dist/enums/",
@@ -31,12 +31,12 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git@github.com:XRPLF/xrpl.js.git"
+    "url": "git@github.com:xu-zhipeng/xrpl.js-uniapp.git"
   },
   "bugs": {
-    "url": "https://github.com/XRPLF/xrpl.js/issues"
+    "url": "https://github.com/xu-zhipeng/xrpl.js-uniapp/issues"
   },
-  "homepage": "https://github.com/XRPLF/xrpl.js/tree/main/packages/ripple-binary-codec#readme",
+  "homepage": "https://github.com/xu-zhipeng/xrpl.js-uniapp/tree/main/packages/ripple-binary-codec#readme",
   "license": "ISC",
   "readmeFilename": "README.md",
   "prettier": "@xrplf/prettier-config",
