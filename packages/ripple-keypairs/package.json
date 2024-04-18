@@ -4,9 +4,9 @@
   "description": "Cryptographic key pairs for the XRP Ledger",
   "scripts": {
     "build": "tsc --build tsconfig.build.json",
-    "test": "jest --verbose false --silent=false ./test/*.test.ts",
+    "test": "jest --verbose false --silent=false",
     "test:browser": "npm run build && karma start ./karma.config.js",
-    "clean": "rm -rf ./dist ./coverage ./test/testCompiledForWeb tsconfig.build.tsbuildinfo",
+    "clean": "rimraf ./dist ./coverage ./test/testCompiledForWeb tsconfig.build.tsbuildinfo",
     "lint": "eslint . --ext .ts",
     "prepublish": "npm run lint && npm test"
   },

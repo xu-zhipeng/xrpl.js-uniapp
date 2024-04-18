@@ -10,9 +10,9 @@
   "scripts": {
     "prepare": "copyfiles -f ./src/text-encoding/*.js ./dist/text-encoding/",
     "build": "npm run prepare && tsc --build ./tsconfig.build.json",
-    "test": "npm run build && jest --verbose false --silent=false ./test/*.test.ts",
+    "test": "npm run build && jest --verbose false --silent=false",
     "test:browser": "npm run build && karma start ./karma.config.js",
-    "clean": "rm -rf ./dist ./coverage ./test/testCompiledForWeb tsconfig.build.tsbuildinfo",
+    "clean": "rimraf ./dist ./coverage ./test/testCompiledForWeb tsconfig.build.tsbuildinfo",
     "lint": "eslint . --ext .ts",
     "prepublish": "npm run lint && npm test"
   },
